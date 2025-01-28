@@ -1,13 +1,13 @@
 //
-//  FetchMealsChallengeUITestsLaunchTests.swift
-//  FetchMealsChallengeUITests
+//  FetchRecipesChallengeUITestsLaunchTests.swift
+//  FetchRecipesChallengeUITests
 //
 //  Created by Krunal Mistry on 1/27/25.
 //
 
 import XCTest
 
-final class FetchMealsChallengeUITestsLaunchTests: XCTestCase {
+final class FetchRecipesChallengeUITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true

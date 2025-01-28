@@ -1,6 +1,6 @@
 //
 //  APIConstant.swift
-//  FetchMealsChallenge
+//  FetchRecipesChallenge
 //
 //  Created by Krunal Mistry on 1/27/25.
 //

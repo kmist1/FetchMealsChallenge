@@ -1,12 +1,12 @@
 //
-//  FetchMealsChallengeTests.swift
-//  FetchMealsChallengeTests
+//  FetchRecipesChallengeTests.swift
+//  FetchRecipesChallengeTests
 //
 //  Created by Krunal Mistry on 1/27/25.
 //
 
 import XCTest
-@testable import FetchMealsChallenge
+@testable import FetchRecipesChallenge
 
 class RecipesPageViewModelTests: XCTestCase {
 

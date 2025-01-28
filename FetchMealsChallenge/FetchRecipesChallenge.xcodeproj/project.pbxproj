@@ -24,25 +24,25 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		93946F9F2D4825BF00E94D10 /* FetchMealsChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FetchMealsChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		93946FAF2D4825C000E94D10 /* FetchMealsChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FetchMealsChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		93946FB92D4825C100E94D10 /* FetchMealsChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FetchMealsChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		93946F9F2D4825BF00E94D10 /* FetchRecipesChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FetchRecipesChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		93946FAF2D4825C000E94D10 /* FetchRecipesChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FetchRecipesChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		93946FB92D4825C100E94D10 /* FetchRecipesChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FetchRecipesChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		93946FA12D4825BF00E94D10 /* FetchMealsChallenge */ = {
+		93946FA12D4825BF00E94D10 /* FetchRecipesChallenge */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = FetchMealsChallenge;
+			path = FetchRecipesChallenge;
 			sourceTree = "<group>";
 		};
-		93946FB22D4825C000E94D10 /* FetchMealsChallengeTests */ = {
+		93946FB22D4825C000E94D10 /* FetchRecipesChallengeTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = FetchMealsChallengeTests;
+			path = FetchRecipesChallengeTests;
 			sourceTree = "<group>";
 		};
-		93946FBC2D4825C100E94D10 /* FetchMealsChallengeUITests */ = {
+		93946FBC2D4825C100E94D10 /* FetchRecipesChallengeUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = FetchMealsChallengeUITests;
+			path = FetchRecipesChallengeUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -75,9 +75,9 @@
 		93946F962D4825BF00E94D10 = {
 			isa = PBXGroup;
 			children = (
-				93946FA12D4825BF00E94D10 /* FetchMealsChallenge */,
-				93946FB22D4825C000E94D10 /* FetchMealsChallengeTests */,
-				93946FBC2D4825C100E94D10 /* FetchMealsChallengeUITests */,
+				93946FA12D4825BF00E94D10 /* FetchRecipesChallenge */,
+				93946FB22D4825C000E94D10 /* FetchRecipesChallengeTests */,
+				93946FBC2D4825C100E94D10 /* FetchRecipesChallengeUITests */,
 				93946FA02D4825BF00E94D10 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -85,9 +85,9 @@
 		93946FA02D4825BF00E94D10 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				93946F9F2D4825BF00E94D10 /* FetchMealsChallenge.app */,
-				93946FAF2D4825C000E94D10 /* FetchMealsChallengeTests.xctest */,
-				93946FB92D4825C100E94D10 /* FetchMealsChallengeUITests.xctest */,
+				93946F9F2D4825BF00E94D10 /* FetchRecipesChallenge.app */,
+				93946FAF2D4825C000E94D10 /* FetchRecipesChallengeTests.xctest */,
+				93946FB92D4825C100E94D10 /* FetchRecipesChallengeUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -95,9 +95,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		93946F9E2D4825BF00E94D10 /* FetchMealsChallenge */ = {
+		93946F9E2D4825BF00E94D10 /* FetchRecipesChallenge */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 93946FC32D4825C100E94D10 /* Build configuration list for PBXNativeTarget "FetchMealsChallenge" */;
+			buildConfigurationList = 93946FC32D4825C100E94D10 /* Build configuration list for PBXNativeTarget "FetchRecipesChallenge" */;
 			buildPhases = (
 				93946F9B2D4825BF00E94D10 /* Sources */,
 				93946F9C2D4825BF00E94D10 /* Frameworks */,
@@ -108,18 +108,18 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				93946FA12D4825BF00E94D10 /* FetchMealsChallenge */,
+				93946FA12D4825BF00E94D10 /* FetchRecipesChallenge */,
 			);
-			name = FetchMealsChallenge;
+			name = FetchRecipesChallenge;
 			packageProductDependencies = (
 			);
 			productName = FetchMealsChallenge;
-			productReference = 93946F9F2D4825BF00E94D10 /* FetchMealsChallenge.app */;
+			productReference = 93946F9F2D4825BF00E94D10 /* FetchRecipesChallenge.app */;
 			productType = "com.apple.product-type.application";
 		};
-		93946FAE2D4825C000E94D10 /* FetchMealsChallengeTests */ = {
+		93946FAE2D4825C000E94D10 /* FetchRecipesChallengeTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 93946FC62D4825C100E94D10 /* Build configuration list for PBXNativeTarget "FetchMealsChallengeTests" */;
+			buildConfigurationList = 93946FC62D4825C100E94D10 /* Build configuration list for PBXNativeTarget "FetchRecipesChallengeTests" */;
 			buildPhases = (
 				93946FAB2D4825C000E94D10 /* Sources */,
 				93946FAC2D4825C000E94D10 /* Frameworks */,
@@ -131,18 +131,18 @@
 				93946FB12D4825C000E94D10 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				93946FB22D4825C000E94D10 /* FetchMealsChallengeTests */,
+				93946FB22D4825C000E94D10 /* FetchRecipesChallengeTests */,
 			);
-			name = FetchMealsChallengeTests;
+			name = FetchRecipesChallengeTests;
 			packageProductDependencies = (
 			);
 			productName = FetchMealsChallengeTests;
-			productReference = 93946FAF2D4825C000E94D10 /* FetchMealsChallengeTests.xctest */;
+			productReference = 93946FAF2D4825C000E94D10 /* FetchRecipesChallengeTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		93946FB82D4825C100E94D10 /* FetchMealsChallengeUITests */ = {
+		93946FB82D4825C100E94D10 /* FetchRecipesChallengeUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 93946FC92D4825C100E94D10 /* Build configuration list for PBXNativeTarget "FetchMealsChallengeUITests" */;
+			buildConfigurationList = 93946FC92D4825C100E94D10 /* Build configuration list for PBXNativeTarget "FetchRecipesChallengeUITests" */;
 			buildPhases = (
 				93946FB52D4825C100E94D10 /* Sources */,
 				93946FB62D4825C100E94D10 /* Frameworks */,
@@ -154,13 +154,13 @@
 				93946FBB2D4825C100E94D10 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				93946FBC2D4825C100E94D10 /* FetchMealsChallengeUITests */,
+				93946FBC2D4825C100E94D10 /* FetchRecipesChallengeUITests */,
 			);
-			name = FetchMealsChallengeUITests;
+			name = FetchRecipesChallengeUITests;
 			packageProductDependencies = (
 			);
 			productName = FetchMealsChallengeUITests;
-			productReference = 93946FB92D4825C100E94D10 /* FetchMealsChallengeUITests.xctest */;
+			productReference = 93946FB92D4825C100E94D10 /* FetchRecipesChallengeUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -186,7 +186,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 93946F9A2D4825BF00E94D10 /* Build configuration list for PBXProject "FetchMealsChallenge" */;
+			buildConfigurationList = 93946F9A2D4825BF00E94D10 /* Build configuration list for PBXProject "FetchRecipesChallenge" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -200,9 +200,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				93946F9E2D4825BF00E94D10 /* FetchMealsChallenge */,
-				93946FAE2D4825C000E94D10 /* FetchMealsChallengeTests */,
-				93946FB82D4825C100E94D10 /* FetchMealsChallengeUITests */,
+				93946F9E2D4825BF00E94D10 /* FetchRecipesChallenge */,
+				93946FAE2D4825C000E94D10 /* FetchRecipesChallengeTests */,
+				93946FB82D4825C100E94D10 /* FetchRecipesChallengeUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -258,12 +258,12 @@
 /* Begin PBXTargetDependency section */
 		93946FB12D4825C000E94D10 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 93946F9E2D4825BF00E94D10 /* FetchMealsChallenge */;
+			target = 93946F9E2D4825BF00E94D10 /* FetchRecipesChallenge */;
 			targetProxy = 93946FB02D4825C000E94D10 /* PBXContainerItemProxy */;
 		};
 		93946FBB2D4825C100E94D10 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 93946F9E2D4825BF00E94D10 /* FetchMealsChallenge */;
+			target = 93946F9E2D4825BF00E94D10 /* FetchRecipesChallenge */;
 			targetProxy = 93946FBA2D4825C100E94D10 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -395,7 +395,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"FetchMealsChallenge/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"FetchRecipesChallenge/Preview Content\"";
 				DEVELOPMENT_TEAM = 8BWMNX8FD2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -424,7 +424,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"FetchMealsChallenge/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"FetchRecipesChallenge/Preview Content\"";
 				DEVELOPMENT_TEAM = 8BWMNX8FD2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -461,7 +461,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FetchMealsChallenge.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FetchMealsChallenge";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FetchRecipesChallenge.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FetchRecipesChallenge";
 			};
 			name = Debug;
 		};
@@ -480,7 +480,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FetchMealsChallenge.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FetchMealsChallenge";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FetchRecipesChallenge.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FetchRecipesChallenge";
 			};
 			name = Release;
 		};
@@ -521,7 +521,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		93946F9A2D4825BF00E94D10 /* Build configuration list for PBXProject "FetchMealsChallenge" */ = {
+		93946F9A2D4825BF00E94D10 /* Build configuration list for PBXProject "FetchRecipesChallenge" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				93946FC12D4825C100E94D10 /* Debug */,
@@ -530,7 +530,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		93946FC32D4825C100E94D10 /* Build configuration list for PBXNativeTarget "FetchMealsChallenge" */ = {
+		93946FC32D4825C100E94D10 /* Build configuration list for PBXNativeTarget "FetchRecipesChallenge" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				93946FC42D4825C100E94D10 /* Debug */,
@@ -539,7 +539,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		93946FC62D4825C100E94D10 /* Build configuration list for PBXNativeTarget "FetchMealsChallengeTests" */ = {
+		93946FC62D4825C100E94D10 /* Build configuration list for PBXNativeTarget "FetchRecipesChallengeTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				93946FC72D4825C100E94D10 /* Debug */,
@@ -548,7 +548,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		93946FC92D4825C100E94D10 /* Build configuration list for PBXNativeTarget "FetchMealsChallengeUITests" */ = {
+		93946FC92D4825C100E94D10 /* Build configuration list for PBXNativeTarget "FetchRecipesChallengeUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				93946FCA2D4825C100E94D10 /* Debug */,

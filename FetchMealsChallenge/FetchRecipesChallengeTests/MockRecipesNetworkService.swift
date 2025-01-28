@@ -1,13 +1,13 @@
 //
 //  xyc.swift
-//  FetchMealsChallenge
+//  FetchRecipesChallenge
 //
 //  Created by Krunal Mistry on 1/27/25.
 //
 
 import XCTest
 import Combine
-@testable import FetchMealsChallenge
+@testable import FetchRecipesChallenge
 
 class MockRecipesNetworkService: RecipesNetworkServiceProtocol {
 

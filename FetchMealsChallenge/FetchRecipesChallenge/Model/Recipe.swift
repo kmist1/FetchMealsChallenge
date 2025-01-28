@@ -1,6 +1,6 @@
 //
 //  Recipe.swift
-//  FetchMealsChallenge
+//  FetchRecipesChallenge
 //
 //  Created by Krunal Mistry on 1/27/25.
 //
@@ -23,7 +23,7 @@ struct Recipe: Codable, Sendable, Identifiable, Hashable  {
     let sourceURL: URL?
     let youtubeURL: URL?
 
-    // CodingKeys to map JSON keys to Swift property names
+    // CodingKeys to map JSON keys to Recipes property names
     enum CodingKeys: String, CodingKey {
         case id = "uuid"
         case cuisine

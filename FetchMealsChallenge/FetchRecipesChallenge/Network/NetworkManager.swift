@@ -1,6 +1,6 @@
 //
 //  NetworkManager.swift
-//  FetchMealsChallenge
+//  FetchRecipesChallenge
 //
 //  Created by Krunal Mistry on 1/27/25.
 //
@@ -28,7 +28,7 @@ final class NetworkManager {
 
 
     //MARK: Private Methods
-    /// Generic private method to fetch data for Meals or recipe
+    /// Generic private method to fetch data for Recipes or recipe
     /// - Parameters:
     ///     - url: The URL of the API endpoint to fetch data from.
     /// - Throws: An error representing a network or decoding issue.
