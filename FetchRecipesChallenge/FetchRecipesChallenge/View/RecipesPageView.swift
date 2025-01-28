@@ -13,40 +13,60 @@ struct RecipesPageView: View {
     var body: some View {
         NavigationStack {
             VStack {
-                Text("Recipes")
-                    .font(.title)
+                // Title & Sorting Picker
+                HStack {
+                    Text("Recipes")
+                        .font(.title)
+                    Spacer()
+                    Picker("Sort by", selection: $recipesViewModel.sortingOption) {
+                        ForEach(SortingOption.allCases, id: \.self) { option in
+                            Text(option.rawValue)
+                        }
+                    }
+                    .pickerStyle(MenuPickerStyle()) // Dropdown-style menu
+                }
+                .padding()
+
                 Divider().background(ignoresSafeAreaEdges: [.leading, .trailing])
+
                 switch recipesViewModel.recipePageStateManager {
                 case .inProgress:
                     ProgressView()
+                        .padding()
+
                 case .success(let recipes):
-                    ScrollView {
-                        LazyVStack {
-                            ForEach(recipes, id: \.self) { recipe in
-                                RecipeListCellView(recipe: recipe)
-                                    .frame(height: 100)
-                                Divider()
+                    if recipes.isEmpty {
+                        Text("No recipes available.")
+                            .foregroundColor(.gray)
+                            .padding()
+                    } else {
+                        ScrollView {
+                            LazyVStack {
+                                ForEach(recipes, id: \.id) { recipe in
+                                    RecipeListCellView(recipe: recipe)
+                                        .frame(height: 100)
+                                    Divider()
+                                }
+                            }
+                        }
+                        .refreshable {
+                            Task {
+                                let endpoint = APIConstant.getAllRecipeEndpoint()
+                                await recipesViewModel.loadRecipes(with: endpoint)
                             }
                         }
                     }
+
                 case .failure(let error):
-                    Spacer()
-                    Text(error.description)
-                    Spacer()
+                    Text(error)
+                        .foregroundColor(.red)
+                        .padding()
                 }
             }
             .padding()
-            .refreshable {
-                // Reload recipes when user pulls down
-                Task {
-                    let endpoint = APIConstant.getAllRecipeEndpoint()
-                    await recipesViewModel.loadRecipes(with: endpoint)
-                }
-            }
         }
     }
 }
-
 #Preview {
     RecipesPageView()
 }

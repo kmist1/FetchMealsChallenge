@@ -8,6 +8,11 @@
 import Foundation
 import Combine
 
+enum SortingOption: String, CaseIterable {
+    case category = "Cuisine"
+    case name = "Name"
+}
+
 /// Represents the different states of the recipes page.
 enum RecipesPageState: Equatable {
 
@@ -34,6 +39,13 @@ class RecipesPageViewModel: ObservableObject {
 
     /// Local cache of fetched recipes.
     private var recipes: [Recipe] = []
+
+    /// The selected sorting option (default is by category/cuisine)
+    @Published var sortingOption: SortingOption = .category {
+        didSet {
+            sortRecipes()
+        }
+    }
 
     /// Initializes the ViewModel and starts fetching recipes on creation.
     /// - Parameter networkManager: The network service used to fetch data.
@@ -73,6 +85,16 @@ class RecipesPageViewModel: ObservableObject {
                     self.recipePageStateManager = .failure(error.localizedDescription)
                 }
             }
+        }
+    }
+
+    /// Sorts recipes based on the selected sorting option.
+    private func sortRecipes() {
+        switch sortingOption {
+        case .category:
+            self.recipePageStateManager = .success(recipes.sorted { $0.cuisine < $1.cuisine })
+        case .name:
+            self.recipePageStateManager = .success(recipes.sorted { $0.name < $1.name })
         }
     }
 }
