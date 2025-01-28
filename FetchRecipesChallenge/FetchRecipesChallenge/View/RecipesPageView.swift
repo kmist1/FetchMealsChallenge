@@ -53,6 +53,7 @@ struct RecipesPageView: View {
                             Task {
                                 let endpoint = APIConstant.getAllRecipeEndpoint()
                                 await recipesViewModel.loadRecipes(with: endpoint)
+                                recipesViewModel.sortingOption = .category
                             }
                         }
                     }
