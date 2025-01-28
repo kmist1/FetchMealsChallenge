@@ -7,7 +7,14 @@
 
 import Foundation
 
+/// A protocol defining a network service responsible for fetching recipe data.
 protocol RecipesNetworkServiceProtocol {
+
+    /// Fetches an array of recipes from the given URL.
+    ///
+    /// - Parameter url: The URL endpoint from which to fetch recipe data.
+    /// - Returns: An array of `Recipe` objects representing the fetched recipes.
+    /// - Throws: A `NetworkError` if the fetch operation fails.
     func fetchRecipes(with url: String) async throws -> [Recipe]
 }
 
