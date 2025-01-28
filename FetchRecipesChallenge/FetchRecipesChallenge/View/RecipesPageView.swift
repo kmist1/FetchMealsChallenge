@@ -36,6 +36,13 @@ struct RecipesPageView: View {
                 }
             }
             .padding()
+            .refreshable {
+                // Reload recipes when user pulls down
+                Task {
+                    let endpoint = APIConstant.getAllRecipeEndpoint()
+                    await recipesViewModel.loadRecipes(with: endpoint)
+                }
+            }
         }
     }
 }
