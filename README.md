@@ -51,6 +51,14 @@ RecipesPageView
 	•	Gracefully handles empty states and error messages.
 	•	Uses LazyVStack for memory-efficient rendering of long lists.
 
+ ### Tests
+
+ * Unit test for RecipePageViewModel 
+ * App coverage > 85%
+
+<img width="1728" alt="Screenshot 2025-01-28 at 10 48 44 AM" src="https://github.com/user-attachments/assets/e5ebff07-1733-48e4-9e9f-83b91e64c398" />
+
+
 
 ## Time Spent:
 * Research and System Design - 1 to 2 Hrs
