@@ -74,6 +74,16 @@ extension NetworkManager: RecipesNetworkServiceProtocol {
     public func fetchRecipes(with url: String) async throws -> [Recipe] {
         let data: RecipeResponse = try await self.fetchData(from: url)
 
+        // Check for malformed data (if validation fails, throw an error)
+        guard data.recipes.allSatisfy({ $0.name != "" && $0.cuisine != "" }) else {
+            throw URLError(.badServerResponse)
+        }
+
+        // Check for empty list
+        if data.recipes.isEmpty {
+            throw NetworkError.noRecipeAvailable
+        }
+
         var recipes = data.recipes
 
         // Sorting recipes by cuisines alphabetical order (i.e American, Bulgerien, Chinese..)

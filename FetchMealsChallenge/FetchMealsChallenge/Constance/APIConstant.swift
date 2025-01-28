@@ -9,24 +9,14 @@ import Foundation
 
 /**
  An enum containing constants for API endpoints related to Recipes.
- This enum provides base URLs for filtering meals and fetching mock/tests data.
+ This enum provides base URLs for recipes.
  */
 enum APIConstant {
     private enum Recipes {
         static let allRecipesBase = "https://d3jbb8n5wk0qxi.cloudfront.net/recipes.json"
-        static let allRecipesMockBaseAPI = "https://d3jbb8n5wk0qxi.cloudfront.net/recipes-malformed.json"
-        static let emptyDataAPI = "https://d3jbb8n5wk0qxi.cloudfront.net/recipes-empty.json"
     }
 
     static func getAllRecipeEndpoint() -> String {
         return Recipes.allRecipesBase
-    }
-
-    static func getAllRecipeMockEndpoint() -> String {
-        return Recipes.allRecipesMockBaseAPI
-    }
-
-    static func getEmptyDataEndpoint() -> String {
-        return Recipes.emptyDataAPI
     }
 }

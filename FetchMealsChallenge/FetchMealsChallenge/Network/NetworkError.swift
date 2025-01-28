@@ -15,6 +15,7 @@ enum NetworkError: Error, Equatable {
     case dataRequestFailed(Error)
     case statusCode(Int)
     case decodingError(Error)
+    case noRecipeAvailable
     case unknownError
 
     var localizedDescription: String {
@@ -27,6 +28,8 @@ enum NetworkError: Error, Equatable {
             return "Network request failed with status code: \(code)"
         case let .decodingError(error):
             return "Error decoding response: \(error.localizedDescription)"
+        case .noRecipeAvailable:
+            return "No recipes available."
         case .unknownError:
             return "An unknown network error occurred."
         }

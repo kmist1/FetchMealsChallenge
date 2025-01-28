@@ -44,9 +44,18 @@ class RecipesPageViewModel: ObservableObject {
             self.recipePageStateManager = .success(self.recipes)
 
         } catch {
-            print("Error getting data: ",error)
-            self.recipePageStateManager = .failure(error.localizedDescription)
-        }
+            if let error = error as? NetworkError {
 
+                // Generilize error for malformed data
+                switch error {
+                case .decodingError(let error):
+                    debugPrint("Decoding Error: ", error.localizedDescription)
+                    self.recipePageStateManager = .failure("Something is wrong.")
+                default:
+                    print("Error getting data: ",error)
+                    self.recipePageStateManager = .failure(error.localizedDescription)
+                }
+            }
+        }
     }
 }
