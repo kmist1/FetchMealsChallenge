@@ -3,7 +3,8 @@
 ### Summary: 
 This project is a coding challenge that focuses on fetching and displaying a list of recipes using Swift, SwiftUI, Async/Await, and Combine. The application features a network layer, a view model, and a simple user interface for displaying a list of recipes sorted by cuisine.
 
-![Simulator Screen Recording - iPhone 16 Pro - 2025-01-28 at 09 34 11](https://github.com/user-attachments/assets/5f898807-c315-4c85-8f58-d8a9f37f4b13)
+![Simulator Screen Recording - iPhone 16 Pro - 2025-01-28 at 09 53 44](https://github.com/user-attachments/assets/0586df32-e64c-434a-873d-dbe6ff739564)
+
 
 
 ### Focus Areas: 
